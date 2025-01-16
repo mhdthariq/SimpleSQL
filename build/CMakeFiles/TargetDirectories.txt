@@ -1,0 +1,3 @@
+/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles/SimpleSQL.dir
+/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles/edit_cache.dir
+/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles/rebuild_cache.dir
