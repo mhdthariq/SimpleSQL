@@ -69,10 +69,24 @@ include CMakeFiles/SimpleSQL.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SimpleSQL.dir/flags.make
 
+CMakeFiles/SimpleSQL.dir/src/db.c.o: CMakeFiles/SimpleSQL.dir/flags.make
+CMakeFiles/SimpleSQL.dir/src/db.c.o: /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c
+CMakeFiles/SimpleSQL.dir/src/db.c.o: CMakeFiles/SimpleSQL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SimpleSQL.dir/src/db.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SimpleSQL.dir/src/db.c.o -MF CMakeFiles/SimpleSQL.dir/src/db.c.o.d -o CMakeFiles/SimpleSQL.dir/src/db.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c
+
+CMakeFiles/SimpleSQL.dir/src/db.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SimpleSQL.dir/src/db.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c > CMakeFiles/SimpleSQL.dir/src/db.c.i
+
+CMakeFiles/SimpleSQL.dir/src/db.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SimpleSQL.dir/src/db.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c -o CMakeFiles/SimpleSQL.dir/src/db.c.s
+
 CMakeFiles/SimpleSQL.dir/src/input.c.o: CMakeFiles/SimpleSQL.dir/flags.make
 CMakeFiles/SimpleSQL.dir/src/input.c.o: /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/input.c
 CMakeFiles/SimpleSQL.dir/src/input.c.o: CMakeFiles/SimpleSQL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SimpleSQL.dir/src/input.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SimpleSQL.dir/src/input.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SimpleSQL.dir/src/input.c.o -MF CMakeFiles/SimpleSQL.dir/src/input.c.o.d -o CMakeFiles/SimpleSQL.dir/src/input.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/input.c
 
 CMakeFiles/SimpleSQL.dir/src/input.c.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/SimpleSQL.dir/src/input.c.s: cmake_force
 CMakeFiles/SimpleSQL.dir/src/main.c.o: CMakeFiles/SimpleSQL.dir/flags.make
 CMakeFiles/SimpleSQL.dir/src/main.c.o: /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/main.c
 CMakeFiles/SimpleSQL.dir/src/main.c.o: CMakeFiles/SimpleSQL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SimpleSQL.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SimpleSQL.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SimpleSQL.dir/src/main.c.o -MF CMakeFiles/SimpleSQL.dir/src/main.c.o.d -o CMakeFiles/SimpleSQL.dir/src/main.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/main.c
 
 CMakeFiles/SimpleSQL.dir/src/main.c.i: cmake_force
@@ -97,19 +111,37 @@ CMakeFiles/SimpleSQL.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SimpleSQL.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/main.c -o CMakeFiles/SimpleSQL.dir/src/main.c.s
 
+CMakeFiles/SimpleSQL.dir/src/row.c.o: CMakeFiles/SimpleSQL.dir/flags.make
+CMakeFiles/SimpleSQL.dir/src/row.c.o: /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c
+CMakeFiles/SimpleSQL.dir/src/row.c.o: CMakeFiles/SimpleSQL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SimpleSQL.dir/src/row.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SimpleSQL.dir/src/row.c.o -MF CMakeFiles/SimpleSQL.dir/src/row.c.o.d -o CMakeFiles/SimpleSQL.dir/src/row.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c
+
+CMakeFiles/SimpleSQL.dir/src/row.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SimpleSQL.dir/src/row.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c > CMakeFiles/SimpleSQL.dir/src/row.c.i
+
+CMakeFiles/SimpleSQL.dir/src/row.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SimpleSQL.dir/src/row.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c -o CMakeFiles/SimpleSQL.dir/src/row.c.s
+
 # Object files for target SimpleSQL
 SimpleSQL_OBJECTS = \
+"CMakeFiles/SimpleSQL.dir/src/db.c.o" \
 "CMakeFiles/SimpleSQL.dir/src/input.c.o" \
-"CMakeFiles/SimpleSQL.dir/src/main.c.o"
+"CMakeFiles/SimpleSQL.dir/src/main.c.o" \
+"CMakeFiles/SimpleSQL.dir/src/row.c.o"
 
 # External object files for target SimpleSQL
 SimpleSQL_EXTERNAL_OBJECTS =
 
+SimpleSQL: CMakeFiles/SimpleSQL.dir/src/db.c.o
 SimpleSQL: CMakeFiles/SimpleSQL.dir/src/input.c.o
 SimpleSQL: CMakeFiles/SimpleSQL.dir/src/main.c.o
+SimpleSQL: CMakeFiles/SimpleSQL.dir/src/row.c.o
 SimpleSQL: CMakeFiles/SimpleSQL.dir/build.make
 SimpleSQL: CMakeFiles/SimpleSQL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable SimpleSQL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable SimpleSQL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleSQL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c" "CMakeFiles/SimpleSQL.dir/src/db.c.o" "gcc" "CMakeFiles/SimpleSQL.dir/src/db.c.o.d"
   "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/input.c" "CMakeFiles/SimpleSQL.dir/src/input.c.o" "gcc" "CMakeFiles/SimpleSQL.dir/src/input.c.o.d"
   "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/main.c" "CMakeFiles/SimpleSQL.dir/src/main.c.o" "gcc" "CMakeFiles/SimpleSQL.dir/src/main.c.o.d"
+  "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c" "CMakeFiles/SimpleSQL.dir/src/row.c.o" "gcc" "CMakeFiles/SimpleSQL.dir/src/row.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -129,6 +129,30 @@ SimpleSQL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/build
 .PHONY : SimpleSQL/fast
 
+src/db.o: src/db.c.o
+.PHONY : src/db.o
+
+# target to build an object file
+src/db.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/db.c.o
+.PHONY : src/db.c.o
+
+src/db.i: src/db.c.i
+.PHONY : src/db.i
+
+# target to preprocess a source file
+src/db.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/db.c.i
+.PHONY : src/db.c.i
+
+src/db.s: src/db.c.s
+.PHONY : src/db.s
+
+# target to generate assembly for a file
+src/db.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/db.c.s
+.PHONY : src/db.c.s
+
 src/input.o: src/input.c.o
 .PHONY : src/input.o
 
@@ -177,6 +201,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/row.o: src/row.c.o
+.PHONY : src/row.o
+
+# target to build an object file
+src/row.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/row.c.o
+.PHONY : src/row.c.o
+
+src/row.i: src/row.c.i
+.PHONY : src/row.i
+
+# target to preprocess a source file
+src/row.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/row.c.i
+.PHONY : src/row.c.i
+
+src/row.s: src/row.c.s
+.PHONY : src/row.s
+
+# target to generate assembly for a file
+src/row.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleSQL.dir/build.make CMakeFiles/SimpleSQL.dir/src/row.c.s
+.PHONY : src/row.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SimpleSQL"
+	@echo "... src/db.o"
+	@echo "... src/db.i"
+	@echo "... src/db.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/row.o"
+	@echo "... src/row.i"
+	@echo "... src/row.s"
 .PHONY : help
 
 

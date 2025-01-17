@@ -1,5 +1,5 @@
-CMakeFiles/SimpleSQL.dir/src/input.c.o: \
- /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/input.c \
+CMakeFiles/SimpleSQL.dir/src/db.c.o: \
+ /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c \
  /usr/include/stdc-predef.h \
  /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/../include/db.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdbool.h \
