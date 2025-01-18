@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build",
+  "command": "/usr/bin/gcc -I/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/include -g -std=gnu99 -o CMakeFiles/SimpleSQL.dir/src/db.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c",
+  "file": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/db.c",
+  "output": "CMakeFiles/SimpleSQL.dir/src/db.c.o"
+},
+{
+  "directory": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build",
+  "command": "/usr/bin/gcc -I/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/include -g -std=gnu99 -o CMakeFiles/SimpleSQL.dir/src/input.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/input.c",
+  "file": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/input.c",
+  "output": "CMakeFiles/SimpleSQL.dir/src/input.c.o"
+},
+{
+  "directory": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build",
+  "command": "/usr/bin/gcc -I/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/include -g -std=gnu99 -o CMakeFiles/SimpleSQL.dir/src/main.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/main.c",
+  "file": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/main.c",
+  "output": "CMakeFiles/SimpleSQL.dir/src/main.c.o"
+},
+{
+  "directory": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/build",
+  "command": "/usr/bin/gcc -I/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/include -g -std=gnu99 -o CMakeFiles/SimpleSQL.dir/src/row.c.o -c /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c",
+  "file": "/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/row.c",
+  "output": "CMakeFiles/SimpleSQL.dir/src/row.c.o"
+}
+]
