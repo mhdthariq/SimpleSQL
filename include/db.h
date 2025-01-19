@@ -1,11 +1,14 @@
 #ifndef DB_H
 #define DB_H
 
+#include <errno.h>
+#include <fcntl.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
+#include <unistd.h>
 
 // Buffer to handle user input
 typedef struct {
@@ -75,10 +78,17 @@ extern const uint32_t PAGE_SIZE;
 extern const uint32_t ROWS_PER_PAGE;
 extern const uint32_t TABLE_MAX_ROWS;
 
+// Page structure with number of rows and page size
+typedef struct {
+    int file_descriptor;
+    uint32_t file_length;
+    void* pages[TABLE_MAX_PAGES];
+} Pager;
+
 // Table structure with pages and number of rows
 typedef struct {
     uint32_t num_rows;
-    void* pages[TABLE_MAX_PAGES];  // Array of pages for rows
+    Pager* pager;
 } Table;
 
 // Functions for handling user input and table operations
@@ -88,7 +98,7 @@ void read_input(InputBuffer* input_buffer);
 void close_input_buffer(InputBuffer* input_buffer);
 
 // Table management functions
-Table* new_table();
+Table* db_open(const char* filename);
 MetaCommandResult do_meta_command(InputBuffer* input_buffer, Table* table);
 PrepareResult prepare_statement(InputBuffer* input_buffer, Statement* statement);
 ExecuteResult execute_statement(Statement* statement, Table* table);
@@ -98,6 +108,10 @@ void print_row(Row* row);
 void serialize_row(Row* source, void* destination);
 void deserialize_row(void* source, Row* destination);
 void* row_slot(Table* table, uint32_t row_num);
-void free_table(Table* table);
+
+// Pager functions
+void* get_page(Pager* pager, uint32_t page_num);
+Pager* pager_open(const char* filename);
+void db_close(Table* table);
 
 #endif // DB_H

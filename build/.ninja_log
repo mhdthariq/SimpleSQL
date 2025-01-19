@@ -1,0 +1,7 @@
+# ninja log v6
+4	54	1737299845160088137	CMakeFiles/SimpleSQL.dir/src/db.c.o	ad528840700bda9e
+5	57	1737299845161088147	CMakeFiles/SimpleSQL.dir/src/main.c.o	f224ddcec07637ea
+6	65	1737299845162088157	CMakeFiles/SimpleSQL.dir/src/table.c.o	137e646fc7e66074
+6	70	1737299845162088157	CMakeFiles/SimpleSQL.dir/src/pager.c.o	8a106ac468c624e3
+5	75	1737299845161088147	CMakeFiles/SimpleSQL.dir/src/input.c.o	5cbbb61ab43e6d25
+75	106	1737299845231088843	SimpleSQL	608a4ae087e39fd6
