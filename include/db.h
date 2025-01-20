@@ -91,6 +91,13 @@ typedef struct {
     Pager* pager;
 } Table;
 
+// Cursor structure to keep track of the current row
+typedef struct {
+    Table* table;
+    uint32_t row_num;
+    bool end_of_table; // Indicates a position past the last element
+} Cursor;
+
 // Functions for handling user input and table operations
 InputBuffer* new_input_buffer();
 void print_prompt();
@@ -113,5 +120,11 @@ void* row_slot(Table* table, uint32_t row_num);
 void* get_page(Pager* pager, uint32_t page_num);
 Pager* pager_open(const char* filename);
 void db_close(Table* table);
+
+// Cursor functions
+Cursor* table_start(Table* table);
+Cursor* table_end(Table* table);
+void* cursor_value(Cursor* cursor);
+void cursor_advance(Cursor* cursor);
 
 #endif // DB_H
