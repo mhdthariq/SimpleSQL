@@ -89,6 +89,15 @@ build CMakeFiles/SimpleSQL.dir/src/table.c.o: C_COMPILER__SimpleSQL_unscanned_ /
   TARGET_COMPILE_PDB = CMakeFiles/SimpleSQL.dir/
   TARGET_PDB = SimpleSQL.pdb
 
+build CMakeFiles/SimpleSQL.dir/src/node.c.o: C_COMPILER__SimpleSQL_unscanned_ /home/renhoshizora/Learning/CMiniProjects/SimpleSQL/src/node.c || cmake_object_order_depends_target_SimpleSQL
+  DEP_FILE = CMakeFiles/SimpleSQL.dir/src/node.c.o.d
+  FLAGS = -std=gnu99
+  INCLUDES = -I/home/renhoshizora/Learning/CMiniProjects/SimpleSQL/include
+  OBJECT_DIR = CMakeFiles/SimpleSQL.dir
+  OBJECT_FILE_DIR = CMakeFiles/SimpleSQL.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/SimpleSQL.dir/
+  TARGET_PDB = SimpleSQL.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SimpleSQL
@@ -97,7 +106,7 @@ build CMakeFiles/SimpleSQL.dir/src/table.c.o: C_COMPILER__SimpleSQL_unscanned_ /
 #############################################
 # Link the executable SimpleSQL
 
-build SimpleSQL: C_EXECUTABLE_LINKER__SimpleSQL_ CMakeFiles/SimpleSQL.dir/src/db.c.o CMakeFiles/SimpleSQL.dir/src/input.c.o CMakeFiles/SimpleSQL.dir/src/main.c.o CMakeFiles/SimpleSQL.dir/src/pager.c.o CMakeFiles/SimpleSQL.dir/src/table.c.o
+build SimpleSQL: C_EXECUTABLE_LINKER__SimpleSQL_ CMakeFiles/SimpleSQL.dir/src/db.c.o CMakeFiles/SimpleSQL.dir/src/input.c.o CMakeFiles/SimpleSQL.dir/src/main.c.o CMakeFiles/SimpleSQL.dir/src/pager.c.o CMakeFiles/SimpleSQL.dir/src/table.c.o CMakeFiles/SimpleSQL.dir/src/node.c.o
   OBJECT_DIR = CMakeFiles/SimpleSQL.dir
   POST_BUILD = :
   PRE_LINK = :
