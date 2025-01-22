@@ -20,6 +20,7 @@ typedef struct {
 // Results of executing a statement
 typedef enum {
     EXECUTE_SUCCESS,
+    EXECUTE_DUPLICATE_KEY,
     EXECUTE_TABLE_FULL
 } ExecuteResult;
 
@@ -139,6 +140,7 @@ MetaCommandResult do_meta_command(InputBuffer* input_buffer, Table* table);
 PrepareResult prepare_statement(InputBuffer* input_buffer, Statement* statement);
 ExecuteResult execute_statement(Statement* statement, Table* table);
 
+
 // Row management functions
 void print_row(Row* row);
 void serialize_row(Row* source, void* destination);
@@ -152,7 +154,7 @@ void db_close(Table* table);
 
 // Cursor functions
 Cursor* table_start(Table* table);
-Cursor* table_end(Table* table);
+Cursor* table_find(Table* table, uint32_t key);
 void* cursor_value(Cursor* cursor);
 void cursor_advance(Cursor* cursor);
 
@@ -165,6 +167,8 @@ void* leaf_node_value(void* node, uint32_t cell_num);
 void print_leaf_node(void* node);
 void print_constants();
 void leaf_node_insert(Cursor* cursor, uint32_t key, Row* value);
+Cursor* leaf_node_find(Table* table, uint32_t page_num, uint32_t key);
+NodeType get_node_type(void* node);
 
 
 #endif // DB_H
