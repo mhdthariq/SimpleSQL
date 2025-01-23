@@ -97,6 +97,22 @@ extern const uint32_t LEAF_NODE_CELL_SIZE;
 extern const uint32_t LEAF_NODE_SPACE_FOR_CELLS;
 extern const uint32_t LEAF_NODE_MAX_CELLS;
 
+// Declare constants for leaf node split
+extern const uint32_t LEAF_NODE_RIGHT_SPLIT_COUNT;
+extern const uint32_t LEAF_NODE_LEFT_SPLIT_COUNT;
+
+// Declare constants for internal node header layout
+extern const uint32_t INTERNAL_NODE_NUM_KEYS_SIZE;
+extern const uint32_t INTERNAL_NODE_NUM_KEYS_OFFSET;
+extern const uint32_t INTERNAL_NODE_RIGHT_CHILD_SIZE;
+extern const uint32_t INTERNAL_NODE_RIGHT_CHILD_OFFSET;
+extern const uint32_t INTERNAL_NODE_HEADER_SIZE;
+
+// Declare constants for internal node body layout
+extern const uint32_t INTERNAL_NODE_KEY_SIZE;
+extern const uint32_t INTERNAL_NODE_CHILD_SIZE;
+extern const uint32_t INTERNAL_NODE_CELL_SIZE;
+
 extern const uint32_t PAGE_SIZE;
 #define TABLE_MAX_PAGES 100
 
@@ -150,6 +166,7 @@ void* row_slot(Table* table, uint32_t row_num);
 // Pager functions
 void* get_page(Pager* pager, uint32_t page_num);
 Pager* pager_open(const char* filename);
+uint32_t get_unused_page_num(Pager* pager);
 void db_close(Table* table);
 
 // Cursor functions
@@ -169,6 +186,9 @@ void print_constants();
 void leaf_node_insert(Cursor* cursor, uint32_t key, Row* value);
 Cursor* leaf_node_find(Table* table, uint32_t page_num, uint32_t key);
 NodeType get_node_type(void* node);
+void set_node_type(void* node, NodeType type);
+void set_node_root(void* node, bool is_root);
+void print_tree(Pager* pager, uint32_t page_num, uint32_t indentation_level);
 
 
 #endif // DB_H

@@ -79,6 +79,11 @@ void pager_flush(Pager* pager, uint32_t page_num) {
     }
 }
 
+// Until we start recycling free pages, new pages will always go to the end of the database file
+uint32_t get_unused_page_num(Pager* pager) {
+    return pager->file_length / PAGE_SIZE;
+}
+
 void db_close(Table* table) {
     Pager* pager = table->pager;
 
