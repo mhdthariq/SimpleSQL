@@ -63,12 +63,12 @@ uint32_t* internal_node_key(void* node, uint32_t key_num) {
     return internal_node_cell(node, key_num) + INTERNAL_NODE_CHILD_SIZE;
 }
 
-uint32_t* get_node_max_key(void* node) {
+uint32_t get_node_max_key(void* node) {
     switch (get_node_type(node)) {
         case NODE_INTERNAL:
-            return internal_node_key(node, *internal_node_num_keys(node) - 1);
+            return *internal_node_key(node, *internal_node_num_keys(node) - 1);
         case NODE_LEAF:
-            return leaf_node_key(node, *leaf_node_num_cells(node) - 1);
+            return *leaf_node_key(node, *leaf_node_num_cells(node) - 1);
     }
 }
 
@@ -157,8 +157,6 @@ void create_new_root(Table* table, uint32_t right_child_page_num) {
     uint32_t left_child_max_key = get_node_max_key(left_child);
     *internal_node_key(root, 0) = left_child_max_key;
     *internal_node_right_child(root) = right_child_page_num;
-    set_node_parent(pager, left_child_page_num, 0);
-    set_node_parent(pager, right_child_page_num, 0);
 }
 
 void leaf_node_split_and_insert(Cursor* cursor, uint32_t key, Row* value) {
@@ -202,10 +200,11 @@ void leaf_node_split_and_insert(Cursor* cursor, uint32_t key, Row* value) {
     *(leaf_node_num_cells(new_node)) = LEAF_NODE_RIGHT_SPLIT_COUNT;
 
     if (is_node_root(cursor->table->pager, cursor->page_num)) {
-        return create_new_root(cursor->table->pager, new_page_num);
+        return create_new_root(cursor->table, new_page_num);
     } else {
         printf("Need to implement updating parent after split\n");
         exit(EXIT_FAILURE);
+    }
 }
 
 void leaf_node_insert(Cursor* cursor, uint32_t key, Row* value) {
