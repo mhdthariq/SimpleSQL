@@ -190,5 +190,14 @@ void set_node_type(void* node, NodeType type);
 void set_node_root(void* node, bool is_root);
 void print_tree(Pager* pager, uint32_t page_num, uint32_t indentation_level);
 
+// Internal node functions
+void initialize_internal_node(void* node);
+uint32_t* internal_node_num_keys(void* node);
+uint32_t* internal_node_right_child(void* node);
+uint32_t* internal_node_cell(void* node, uint32_t cell_num);
+uint32_t* internal_node_child(void* node, uint32_t child_num);
+uint32_t* internal_node_key(void* node, uint32_t key_num);
+void internal_node_insert(Table* table, uint32_t parent_page_num, uint32_t child_page_num);
+Cursor* internal_node_find(Table* table, uint32_t page_num, uint32_t key);
 
 #endif // DB_H
